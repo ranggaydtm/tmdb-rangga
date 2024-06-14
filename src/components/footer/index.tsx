@@ -4,10 +4,11 @@ import { IconBrandGithub } from "@tabler/icons-react";
 
 interface FooterProps {
   page: number;
+  totalPage?: number;
   setPage: (page: number) => void;
 }
 
-const Footer: React.FC<FooterProps> = ({ page, setPage }) => {
+const Footer: React.FC<FooterProps> = ({ page, totalPage, setPage }) => {
   return (
     <div className="pagination py-2 bg-slate-900 text-white">
       <div className="flex flex-row items-center justify-center py-3">
@@ -20,7 +21,9 @@ const Footer: React.FC<FooterProps> = ({ page, setPage }) => {
           {page}
         </div>
         <div className="ml-5 pl-5 text-white">
-          <button onClick={() => setPage(page + 1)}>Next</button>
+          <button onClick={() => setPage(page + 1)} disabled={totalPage === 1}>
+            Next
+          </button>
         </div>
       </div>
       <Link to="https://github.com/ranggaydtm" target="_blank" rel="noopener noreferrer">
