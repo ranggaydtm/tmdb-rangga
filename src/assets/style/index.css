@@ -1,0 +1,104 @@
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar {
+  background-color: darkslategray;
+  width: 100%;
+  min-height: 80px;
+}
+
+.navbarContent {
+  color: azure;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.navTitle {
+  font-size: xx-large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-left: 70px;
+}
+
+.navMenu {
+  width: 50vh;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.heroTitle {
+  text-align: start;
+  font-size: x-large;
+  font-family: sans-serif;
+  font-weight: 700;
+  padding: 10px 0 10px 150px;
+  border-bottom: 1px solid;
+  border-style: outset;
+}
+
+.heroContent {
+  padding-top: 20px;
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heroContent > h3 {
+  font-size: small;
+  font-weight: 600;
+}
+
+.heroContent > h5 {
+  font-size: small;
+  font-style: italic;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.favIcon {
+  position: absolute;
+  color: transparent;
+  top: 10px;
+  right: 10px;
+}
+
+.imageContainer:hover .favIcon {
+  display: block;
+  color: red;
+}
+
+.bg {
+  background-color: #f2f2f2;
+  padding-bottom: 50px;
+}
+
+.movieContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
